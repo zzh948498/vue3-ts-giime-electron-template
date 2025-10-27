@@ -19,13 +19,13 @@ export default defineConfig(({ mode, command }) => {
 
   const env = loadEnv(mode, process.cwd(), '');
 
-  // const base = env.VITE_BASE_CDN_URL || env.VITE_BASE_URL || '/';
+  const base = env.VITE_BASE_CDN_URL || env.VITE_BASE_URL || '/';
 
   return {
-    base: './',
+    base,
     define: {
       __APP_BUILD_TIME__: String(Date.now()),
-      __APP_ROUTER_HASH_History: 'true',
+      __APP_ROUTER_HASH_History: 'false',
     },
     resolve: {
       alias: {

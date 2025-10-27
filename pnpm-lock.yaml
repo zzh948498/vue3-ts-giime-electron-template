@@ -8,21 +8,60 @@ importers:
 
   .:
     dependencies:
+      '@commitlint/cli':
+        specifier: ^19.8.1
+        version: 19.8.1(@types/node@24.8.1)(typescript@5.9.3)
+      '@commitlint/config-conventional':
+        specifier: ^19.8.1
+        version: 19.8.1
       '@element-plus/icons-vue':
         specifier: ^2.3.2
         version: 2.3.2(vue@3.5.22(typescript@5.9.3))
+      '@microsoft/fetch-event-source':
+        specifier: ^2.0.1
+        version: 2.0.1
+      '@tsconfig/node22':
+        specifier: ^22.0.2
+        version: 22.0.2
+      '@types/js-cookie':
+        specifier: ^3.0.6
+        version: 3.0.6
+      '@types/node':
+        specifier: ^24.8.1
+        version: 24.8.1
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.4
+        version: 5.2.4(vite@6.4.1(@types/node@24.8.1)(jiti@1.21.7)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6))(vue@3.5.22(typescript@5.9.3))
+      '@vitest/coverage-istanbul':
+        specifier: ^3.2.4
+        version: 3.2.4(vitest@3.2.4(@types/debug@4.1.12)(@types/node@24.8.1)(jiti@1.21.7)(jsdom@26.1.0)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6))
+      '@vue/test-utils':
+        specifier: ^2.4.6
+        version: 2.4.6
+      '@vue/tsconfig':
+        specifier: ^0.8.1
+        version: 0.8.1(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
       '@vueuse/core':
         specifier: ^13.7.0
         version: 13.9.0(vue@3.5.22(typescript@5.9.3))
       '@vueuse/integrations':
         specifier: ^13.7.0
         version: 13.9.0(async-validator@4.2.5)(axios@1.12.2)(idb-keyval@6.2.2)(vue@3.5.22(typescript@5.9.3))
+      '@zeronejs/cli':
+        specifier: ^3.8.3
+        version: 3.8.3(@types/node@24.8.1)(encoding@0.1.13)
+      autoprefixer:
+        specifier: ^10.4.21
+        version: 10.4.21(postcss@8.5.6)
       axios:
         specifier: ^1.11.0
         version: 1.12.2
       dayjs:
         specifier: ^1.11.13
         version: 1.11.18
+      dompurify:
+        specifier: ^3.3.0
+        version: 3.3.0
       echarts:
         specifier: ^5.6.0
         version: 5.6.0
@@ -33,17 +72,62 @@ importers:
         specifier: 2.9.10
         version: 2.9.10(vue@3.5.22(typescript@5.9.3))
       giime:
-        specifier: ^0.7.23
-        version: 0.7.23(echarts@5.6.0)(element-plus@2.9.10(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
+        specifier: ^0.7.24
+        version: 0.7.24(echarts@5.6.0)(element-plus@2.9.10(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
+      highlight.js:
+        specifier: ^11.11.1
+        version: 11.11.1
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       js-cookie:
         specifier: ^3.0.5
         version: 3.0.5
+      jsdom:
+        specifier: ^26.1.0
+        version: 26.1.0
+      marked:
+        specifier: ^16.4.1
+        version: 16.4.1
+      npm-run-all:
+        specifier: ^4.1.5
+        version: 4.1.5
       pinia:
         specifier: ^3.0.3
         version: 3.0.3(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
+      postcss:
+        specifier: ^8.5.6
+        version: 8.5.6
       sass:
         specifier: ^1.90.0
         version: 1.93.2
+      tailwindcss:
+        specifier: ^3.4.17
+        version: 3.4.18(tsx@4.20.6)
+      typescript:
+        specifier: ^5.9.2
+        version: 5.9.3
+      unplugin-auto-import:
+        specifier: ^19.3.0
+        version: 19.3.0(@vueuse/core@13.9.0(vue@3.5.22(typescript@5.9.3)))
+      unplugin-icons:
+        specifier: ^22.2.0
+        version: 22.5.0(@vue/compiler-sfc@3.5.22)
+      unplugin-vue-components:
+        specifier: ^28.8.0
+        version: 28.8.0(@babel/parser@7.28.4)(vue@3.5.22(typescript@5.9.3))
+      uuid:
+        specifier: ^13.0.0
+        version: 13.0.0
+      vite:
+        specifier: ^6.3.5
+        version: 6.4.1(@types/node@24.8.1)(jiti@1.21.7)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)
+      vite-plugin-svg-icons:
+        specifier: ^2.0.1
+        version: 2.0.1(vite@6.4.1(@types/node@24.8.1)(jiti@1.21.7)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6))
+      vitest:
+        specifier: ^3.2.4
+        version: 3.2.4(@types/debug@4.1.12)(@types/node@24.8.1)(jiti@1.21.7)(jsdom@26.1.0)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)
       vue:
         specifier: ^3.5.19
         version: 3.5.22(typescript@5.9.3)
@@ -53,13 +137,10 @@ importers:
       vue-router:
         specifier: ^4.5.1
         version: 4.6.3(vue@3.5.22(typescript@5.9.3))
+      vue-tsc:
+        specifier: ^2.2.12
+        version: 2.2.12(typescript@5.9.3)
     devDependencies:
-      '@commitlint/cli':
-        specifier: ^19.8.1
-        version: 19.8.1(@types/node@24.8.1)(typescript@5.9.3)
-      '@commitlint/config-conventional':
-        specifier: ^19.8.1
-        version: 19.8.1
       '@electron-forge/cli':
         specifier: ^7.10.2
         version: 7.10.2(encoding@0.1.13)
@@ -87,42 +168,21 @@ importers:
       '@electron/fuses':
         specifier: ^1.8.0
         version: 1.8.0
-      '@tsconfig/node22':
-        specifier: ^22.0.2
-        version: 22.0.2
+      '@types/dompurify':
+        specifier: ^3.2.0
+        version: 3.2.0
       '@types/electron-squirrel-startup':
         specifier: ^1.0.2
         version: 1.0.2
-      '@types/js-cookie':
-        specifier: ^3.0.6
-        version: 3.0.6
       '@types/jsdom':
         specifier: ^21.1.7
         version: 21.1.7
-      '@types/node':
-        specifier: ^24.8.1
-        version: 24.8.1
-      '@vitejs/plugin-vue':
-        specifier: ^5.2.4
-        version: 5.2.4(vite@6.4.1(@types/node@24.8.1)(jiti@1.21.7)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6))(vue@3.5.22(typescript@5.9.3))
-      '@vitest/coverage-istanbul':
-        specifier: ^3.2.4
-        version: 3.2.4(vitest@3.2.4(@types/debug@4.1.12)(@types/node@24.8.1)(jiti@1.21.7)(jsdom@26.1.0)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6))
-      '@vue/test-utils':
-        specifier: ^2.4.6
-        version: 2.4.6
-      '@vue/tsconfig':
-        specifier: ^0.8.1
-        version: 0.8.1(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
-      '@zeronejs/cli':
-        specifier: ^3.8.2
-        version: 3.8.2(@types/node@24.8.1)(encoding@0.1.13)
+      '@types/marked':
+        specifier: ^6.0.0
+        version: 6.0.0
       '@zeronejs/eslint-config-vue3':
         specifier: ^0.1.10
         version: 0.1.10(@types/eslint@9.6.1)(@typescript-eslint/utils@8.46.1(eslint@9.38.0(jiti@1.21.7))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.38.0(jiti@1.21.7))(prettier@3.6.2)(typescript@5.9.3)(vitest@3.2.4(@types/debug@4.1.12)(@types/node@24.8.1)(jiti@1.21.7)(jsdom@26.1.0)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6))
-      autoprefixer:
-        specifier: ^10.4.21
-        version: 10.4.21(postcss@8.5.6)
       electron:
         specifier: ^38.3.0
         version: 38.3.0
@@ -132,18 +192,6 @@ importers:
       git-cz:
         specifier: ^4.9.0
         version: 4.9.0
-      husky:
-        specifier: ^9.1.7
-        version: 9.1.7
-      jsdom:
-        specifier: ^26.1.0
-        version: 26.1.0
-      npm-run-all:
-        specifier: ^4.1.5
-        version: 4.1.5
-      postcss:
-        specifier: ^8.5.6
-        version: 8.5.6
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
@@ -153,36 +201,9 @@ importers:
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
-      tailwindcss:
-        specifier: ^3.4.17
-        version: 3.4.18(tsx@4.20.6)
       tsx:
         specifier: ^4.20.5
         version: 4.20.6
-      typescript:
-        specifier: ^5.9.2
-        version: 5.9.3
-      unplugin-auto-import:
-        specifier: ^19.3.0
-        version: 19.3.0(@vueuse/core@13.9.0(vue@3.5.22(typescript@5.9.3)))
-      unplugin-icons:
-        specifier: ^22.2.0
-        version: 22.5.0(@vue/compiler-sfc@3.5.22)
-      unplugin-vue-components:
-        specifier: ^28.8.0
-        version: 28.8.0(@babel/parser@7.28.4)(vue@3.5.22(typescript@5.9.3))
-      vite:
-        specifier: ^6.3.5
-        version: 6.4.1(@types/node@24.8.1)(jiti@1.21.7)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)
-      vite-plugin-svg-icons:
-        specifier: ^2.0.1
-        version: 2.0.1(vite@6.4.1(@types/node@24.8.1)(jiti@1.21.7)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6))
-      vitest:
-        specifier: ^3.2.4
-        version: 3.2.4(@types/debug@4.1.12)(@types/node@24.8.1)(jiti@1.21.7)(jsdom@26.1.0)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)
-      vue-tsc:
-        specifier: ^2.2.12
-        version: 2.2.12(typescript@5.9.3)
 
 packages:
 
@@ -887,6 +908,9 @@ packages:
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
     hasBin: true
 
+  '@microsoft/fetch-event-source@2.0.1':
+    resolution: {integrity: sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA==}
+
   '@napi-rs/wasm-runtime@0.2.12':
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
 
@@ -1163,6 +1187,10 @@ packages:
   '@types/deep-eql@4.0.2':
     resolution: {integrity: sha512-c9h9dVVMigMPc4bwTvC5dxqtqJZwQPePsWjPlpSOnojbor6pGqdk541lfA7AqFQr5pB1BRdq0juY9db81BwyFw==}
 
+  '@types/dompurify@3.2.0':
+    resolution: {integrity: sha512-Fgg31wv9QbLDA0SpTOXO3MaxySc4DKGLi8sna4/Utjo4r3ZRPdCt4UQee8BWr+Q5z21yifghREPJGYaEOEIACg==}
+    deprecated: This is a stub types definition. dompurify provides its own type definitions, so you do not need this installed.
+
   '@types/electron-squirrel-startup@1.0.2':
     resolution: {integrity: sha512-AzxnvBzNh8K/0SmxMmZtpJf1/IWoGXLP+pQDuUaVkPyotI8ryvAtBSqgxR/qOSvxWHYWrxkeNsJ+Ca5xOuUxJQ==}
 
@@ -1202,6 +1230,10 @@ packages:
   '@types/lodash@4.17.20':
     resolution: {integrity: sha512-H3MHACvFUEiujabxhaI/ImO6gUrd8oOurg7LQtS7mbwIXA/cUqWrvBsaeJ23aZEPk1TAYkurjfMbSELfoCXlGA==}
 
+  '@types/marked@6.0.0':
+    resolution: {integrity: sha512-jmjpa4BwUsmhxcfsgUit/7A9KbrC48Q0q8KvnY107ogcjGgTFDlIL3RpihNpx2Mu1hM4mdFQjoVc4O6JoGKHsA==}
+    deprecated: This is a stub types definition. marked provides its own type definitions, so you do not need this installed.
+
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
 
@@ -1228,6 +1260,9 @@ packages:
 
   '@types/tough-cookie@4.0.5':
     resolution: {integrity: sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==}
+
+  '@types/trusted-types@2.0.7':
+    resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -1653,8 +1688,8 @@ packages:
     resolution: {integrity: sha512-jB6FI1/7xUxe9YEegxS9xaWro8lh2wbeyIeXlT188MzgE/FWzQmfEta5C+s2T7jDORpb22IhzYrHsBm0kygFbw==}
     engines: {node: '>=12.0.0'}
 
-  '@zeronejs/cli@3.8.2':
-    resolution: {integrity: sha512-VZonW5cdy1haD4m+1gbgeugsarclrtJAtLkGEcA+yvKevyetjISeP7AZAT3wyOtsbUfwQJvN+PMe5DlsX62D5g==}
+  '@zeronejs/cli@3.8.3':
+    resolution: {integrity: sha512-FUS/BF7j1Zw175s73qQwBLLxVhUdpJzvr6XwWJXmLXXezUNPyFSPB1SflBchUHUYMex0SY+Y9oI7iVXjfATVxg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
 
@@ -2439,6 +2474,9 @@ packages:
     resolution: {integrity: sha512-GrwoxYN+uWlzO8uhUXRl0P+kHE4GtVPfYzVLcUxPL7KNdHKj66vvlhiweIHqYYXWlw+T8iLMp42Lm67ghw4WMQ==}
     engines: {node: '>= 4'}
 
+  dompurify@3.3.0:
+    resolution: {integrity: sha512-r+f6MYR1gGN1eJv0TVQbhA7if/U7P87cdPl3HN5rikqaBSBxLiCb/b9O+2eG0cxz0ghyU+mU1QkbsOwERMYlWQ==}
+
   domutils@1.7.0:
     resolution: {integrity: sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg==}
 
@@ -3025,8 +3063,8 @@ packages:
     resolution: {integrity: sha512-Ln0UQDlxH1BapMu3GPtf7CuYNwRZf2gwCuPqbyG6pB8WfmFpzqcy4xtAaAMUhnNqjMKTiCPZG2oMT3YSx8U2NA==}
     engines: {node: '>=0.10.0'}
 
-  giime@0.7.23:
-    resolution: {integrity: sha512-KuT37uH4nqlHARFIqV4MAwX5pQ4BQwDp+yVmo6/s8BMIyQxo+zAw+EMdRXFdZS7EdtDXwELAv+AH9fZgkQs/1Q==}
+  giime@0.7.24:
+    resolution: {integrity: sha512-WKCygsUIpH1dBxxaaJAhDOy75AHR3TvO1FkCX2Epl2KfnBNelAkftztNM8RRsrcSsHlsYFvmEc4ix1YQNcAnJQ==}
     peerDependencies:
       echarts: ^5.5.1
       element-plus: ^2.7.8
@@ -3184,6 +3222,10 @@ packages:
   he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+
+  highlight.js@11.11.1:
+    resolution: {integrity: sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w==}
+    engines: {node: '>=12.0.0'}
 
   hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
@@ -3866,6 +3908,11 @@ packages:
 
   markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
+
+  marked@16.4.1:
+    resolution: {integrity: sha512-ntROs7RaN3EvWfy3EZi14H4YxmT6A5YvywfhO+0pm+cH/dnSQRmdAmoFIc3B9aiwTehyk7pESH4ofyBY+V5hZg==}
+    engines: {node: '>= 20'}
+    hasBin: true
 
   matcher@3.0.0:
     resolution: {integrity: sha512-OkeDaAZ/bQCxeFAozM55PKcKU0yJMPGifLwV4Qgjitu+5MoAfSQN4lsLJeXZ1b8w0x+/Emda6MZgXS1jvsapng==}
@@ -5680,6 +5727,10 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  uuid@13.0.0:
+    resolution: {integrity: sha512-XQegIaBTVUjSHliKqcnFqYypAd4S+WCYt5NIeRs6w/UAry7z8Y9j5ZwRRL4kzq9U3sD6v+85er9FvkEaBpji2w==}
+    hasBin: true
+
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
     hasBin: true
@@ -7032,6 +7083,8 @@ snapshots:
       - supports-color
     optional: true
 
+  '@microsoft/fetch-event-source@2.0.1': {}
+
   '@napi-rs/wasm-runtime@0.2.12':
     dependencies:
       '@emnapi/core': 1.5.0
@@ -7254,6 +7307,10 @@ snapshots:
 
   '@types/deep-eql@4.0.2': {}
 
+  '@types/dompurify@3.2.0':
+    dependencies:
+      dompurify: 3.3.0
+
   '@types/electron-squirrel-startup@1.0.2': {}
 
   '@types/eslint-scope@3.7.7':
@@ -7297,6 +7354,10 @@ snapshots:
 
   '@types/lodash@4.17.20': {}
 
+  '@types/marked@6.0.0':
+    dependencies:
+      marked: 16.4.1
+
   '@types/mdast@4.0.4':
     dependencies:
       '@types/unist': 3.0.3
@@ -7326,6 +7387,9 @@ snapshots:
       '@types/node': 24.8.1
 
   '@types/tough-cookie@4.0.5': {}
+
+  '@types/trusted-types@2.0.7':
+    optional: true
 
   '@types/unist@3.0.3': {}
 
@@ -7810,7 +7874,7 @@ snapshots:
     dependencies:
       typescript: 4.5.5
 
-  '@zeronejs/cli@3.8.2(@types/node@24.8.1)(encoding@0.1.13)':
+  '@zeronejs/cli@3.8.3(@types/node@24.8.1)(encoding@0.1.13)':
     dependencies:
       '@zeronejs/ast-ts': 1.0.0-beta.8
       '@zeronejs/utils': 2.2.1
@@ -8622,6 +8686,10 @@ snapshots:
   domhandler@4.3.1:
     dependencies:
       domelementtype: 2.3.0
+
+  dompurify@3.3.0:
+    optionalDependencies:
+      '@types/trusted-types': 2.0.7
 
   domutils@1.7.0:
     dependencies:
@@ -9457,7 +9525,7 @@ snapshots:
 
   get-value@2.0.6: {}
 
-  giime@0.7.23(echarts@5.6.0)(element-plus@2.9.10(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3)):
+  giime@0.7.24(echarts@5.6.0)(element-plus@2.9.10(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@types/file-saver': 2.0.7
       '@types/lodash': 4.17.20
@@ -9646,6 +9714,8 @@ snapshots:
       function-bind: 1.1.2
 
   he@1.2.0: {}
+
+  highlight.js@11.11.1: {}
 
   hookable@5.5.3: {}
 
@@ -10339,6 +10409,8 @@ snapshots:
       object-visit: 1.0.1
 
   markdown-table@3.0.4: {}
+
+  marked@16.4.1: {}
 
   matcher@3.0.0:
     dependencies:
@@ -12391,6 +12463,8 @@ snapshots:
       mem: 4.3.0
 
   util-deprecate@1.0.2: {}
+
+  uuid@13.0.0: {}
 
   uuid@9.0.1: {}
 
